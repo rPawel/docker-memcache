@@ -1,7 +1,5 @@
 FROM rpawel/ubuntu:trusty
 
-ADD config/* /etc/
-
 ## START
 RUN apt-get -q -y update \ 
  && apt-get dist-upgrade -y --no-install-recommends \
