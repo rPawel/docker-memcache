@@ -13,7 +13,7 @@ ADD run.sh /
 RUN chmod +x /build.sh /run.sh \
  && bash /build.sh && rm -f /build.sh
 
-ADD config/* /etc
+ADD ./config /etc/
 
 # PORTS
 EXPOSE 11211
