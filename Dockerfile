@@ -1,4 +1,4 @@
-FROM rpawel/ubuntu:trusty
+FROM rpawel/ubuntu:xenial
 
 ## START
 RUN apt-get -q -y update \ 
