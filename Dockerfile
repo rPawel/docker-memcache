@@ -1,9 +1,9 @@
-FROM rpawel/ubuntu:xenial
+FROM rpawel/ubuntu:bionic
 
 ## START
 RUN apt-get -q -y update \ 
  && apt-get dist-upgrade -y --no-install-recommends \
- && DEBIAN_FRONTEND=noninteractive apt-get install -y -q memcached \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y -q memcached locales tzdata \
  && DEBIAN_FRONTEND=newt
 
 ADD build.sh /
