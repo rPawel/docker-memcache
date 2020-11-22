@@ -1,4 +1,4 @@
-FROM rpawel/ubuntu:bionic
+FROM rpawel/ubuntu:focal
 
 ## START
 RUN apt-get -q -y update \ 
